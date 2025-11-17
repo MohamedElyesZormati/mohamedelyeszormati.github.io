@@ -1,0 +1,269 @@
+* {
+    font-family: "Poppins";
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER STYLES */
+
+header {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid #c3c3c3;
+    margin: 40px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 a:hover {
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+#main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.nav-list-item {
+    font-size: 16px;
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav-list-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.selected {
+    font-weight: 600;
+}
+
+.lang-selector {
+    opacity: 0.5;
+}
+
+.selected-lang {
+    opacity: 1;
+}
+
+/* MAIN */
+
+main {
+    max-width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+}
+
+/* MAIN SECTION 1 */
+
+#my-photo {
+    width: 240px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 100%;
+    border: 2px solid #000;
+}
+
+/* MAIN SECTION 2 */
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-section-2 h2 {
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+
+#main-section-2 h3 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#main-section-2 p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.view-portfolio-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    margin-right: 5px;
+    padding: 10px 20px;
+}
+
+.view-portfolio-btn:hover {
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+.hire-me-btn {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+.hire-me-btn:hover {
+    background-color: #f5f5f5;
+    transition: 500ms;
+}
+
+.nav-list-item a:hover:has(.selected) {
+    opacity: 1;
+}
+
+/* FOOTER STYLES */
+footer {
+    padding-top: 40px;
+    border-top: 1px solid #c3c3c3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+
+#social-icons ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+.social-icon:hover {
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+
+    /* HEADER MOBILE */
+    header h1 {
+        font-size: 18px;
+    }
+
+    #main-nav {
+        display: none;
+
+    }
+
+    #mobile-menu {
+        display: block;
+        margin-top: -10px;
+    }
+
+    #menu-close {
+        display: none;
+        font-size: 30px;
+    }
+
+    #menu-open {
+        font-size: 30px;
+    }
+
+
+    /* MAIN */
+    main {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #my-photo {
+        width: 140px;
+        height: auto;
+        margin-right: 0px;
+    }
+
+    #main-section-2 h2 {
+        font-size: 22px;
+        margin-bottom: -5px;
+    }
+
+    #main-section-2 h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    #main-section-2 p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    #mobile-nav {
+        position: fixed;
+        top: 20;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        display: none;
+        z-index: 1000;
+    }
+
+    #mobile-nav ul {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #mobile-nav .nav-list-item {
+        font-size: 25px;
+        list-style: none;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    #language-selectors {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* FOOTER */
+    footer {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,290 @@
+* {
+    font-family: "Poppins";
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER STYLES */
+
+header {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid #c3c3c3;
+    margin: 40px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 a:hover {
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+#main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.nav-list-item {
+    font-size: 16px;
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav-list-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.selected {
+    font-weight: 600;
+}
+
+.lang-selector {
+    opacity: 0.5;
+}
+
+.selected-lang {
+    opacity: 1;
+}
+
+/* MAIN */
+
+.hidden {
+    display: none;
+}
+
+main {
+    margin: 40px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.summary-section {
+
+    border-bottom: 1px solid #c3c3c3;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.summary-section h3 {
+    margin-top: 20px;
+}
+
+.summary-section ul {
+    margin-left: 20px;
+}
+
+.summary-section ul li {
+    font-size: 18px;
+}
+
+.summary-section p {
+    font-size: 20px;
+}
+
+.summary-section p a {
+
+    color: #000;
+    font-weight: 600;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.final {
+    border-bottom: none;
+}
+
+.skills-1,
+.skills-2,
+.skills-3 {
+    width: 33.33%;
+}
+
+.skills-section ul li {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.secondary-list li {
+    margin-left: 40px !important;
+    font-size: 17px !important;
+}
+
+.skills-section article p {
+    font-size: 20px;
+}
+
+#my-photo {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* FOOTER STYLES */
+footer {
+    padding-top: 40px;
+    border-top: 1px solid #c3c3c3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+#social-icons ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#social-icons ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+.social-icon:hover {
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+
+    /* HEADER MOBILE */
+    header h1 {
+        font-size: 18px;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+        margin-top: -10px;
+    }
+
+
+    #menu-close {
+        display: none;
+        font-size: 30px;
+    }
+
+    #menu-open {
+        font-size: 30px;
+    }
+
+
+    /* MAIN */
+    main {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    main h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    #mobile-nav {
+        position: fixed;
+        top: 20;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        display: none;
+        z-index: 1000 !important;
+    }
+
+    #mobile-nav ul {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #mobile-nav .nav-list-item {
+        font-size: 25px;
+        list-style: none;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    #language-selectors {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .skills-section {
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .skills-1,
+    .skills-2,
+    .skills-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .summary-section p {
+        font-size: 16px;
+    }
+
+    .summary-section ul li {
+        font-size: 16px;
+    }
+
+    .skills-section ul li {
+        font-size: 16px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+}

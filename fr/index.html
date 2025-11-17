@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamed Elyes Zormati">
+    <meta name="description" content="Je m'appelle Mohamed Elyes Zormati, je suis développeur web de Tunis, Tunisie.">
+    <!-- FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/poppins.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/mobile-menu.js" defer></script>
+    <title>Mohamed Elyes Zormati - Développeur Web</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+
+        <h1><a href="index.html">Mohamed Elyes Zormati</a></h1>
+
+        <section class="hidden" id="mobile-menu">
+            <div id="menu-open"><i class="fa-solid fa-bars"></i></div>
+            <div id="menu-close"><i class="fa-solid fa-x"></i></div>
+        </section>
+
+        <nav id="main-nav">
+            <ul>
+                <li class="nav-list-item"><a href="index.html"><span class="selected">Accueil</span></a></li>
+                <li class="nav-list-item"><a href="a-propos.html">
+                        À propos</a></li>
+                <li class="nav-list-item"><a href="portfolio.html">
+                        Portfolio</a></li>
+                <li class="nav-list-item"><a href="contact.html">
+                        Contact</a></li>
+
+                <li class="nav-list-item lang-selector"><a href="../index.html"><img
+                            src="../images/english_icon.png"></a></li>
+
+                <li class="nav-list-item lang-selector selected-lang"><a href="index.html"><img
+                            src="../images/french_icon.png"></a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="hidden" id="mobile-nav">
+        <ul>
+            <li class="nav-list-item selected"><a href="index.html">Accueil</a>
+            </li>
+            <li class="nav-list-item"><a href="a-propos.html">
+                    À propos</a></li>
+            <li class="nav-list-item"><a href="portfolio.html">
+                    Portfolio</a></li>
+            <li class="nav-list-item"><a href="contact.html">
+                    Contact</a></li>
+            <div id="language-selectors">
+                <li class="nav-list-item lang-selector"><a href="../index.html"><img
+                            src="../images/english_icon.png"></a></li>
+                <li class="nav-list-item lang-selector selected-lang"><a href="index.html"><img
+                            src="../images/french_icon.png"></a>
+                </li>
+            </div>
+
+        </ul>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- MAIN SECTION 1 -->
+        <section id="main-section-1">
+            <img id="my-photo" src="../images/my_photo.png" alt="Ma photo">
+        </section>
+
+        <!-- MAIN SECTION 2 -->
+        <section id="main-section-2">
+            <h2>Mohamed Elyes Zormati</h2>
+            <h3>Développeur Web</h3>
+
+            <a class="view-portfolio-btn" href="portfolio.html">Voir
+                Portfolio</a>
+            <a class="hire-me-btn" href="contact.html">Recrutement</a>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <section id="footer-1">
+            <p>&copy;2025 Mohamed Elyes Zormati</p>
+        </section>
+
+
+        <section id="footer-2">
+            <section id="social-icons">
+                <ul>
+                    <li><a class="social-icon" href="mailto:mohamed.elyes.zormati@outlook.com" aria-label="email"><i
+                                class="fa-solid fa-envelope"></i></a></li>
+                    <li><a class="social-icon" href="https://wa.me/21693039536" aria-label="WhatsApp" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+    </footer>
+</body>
+
+</html>

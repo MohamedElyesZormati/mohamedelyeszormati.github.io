@@ -1,0 +1,267 @@
+* {
+    font-family: "Poppins";
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER STYLES */
+
+header {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid #c3c3c3;
+    margin: 40px;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+#main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.nav-list-item {
+    font-size: 16px;
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav-list-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-link:hover {
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+.selected {
+    font-weight: 600;
+}
+
+.lang-selector {
+    opacity: 0.5;
+}
+
+.selected-lang {
+    opacity: 1;
+}
+
+
+
+
+/* MAIN */
+.hidden {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.project-description-item {
+    list-style-type: none;
+}
+
+.filter-btn {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    width: 200px;
+    height: 30px;
+}
+
+.project-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 40px 0px;
+}
+
+.project img {
+    width: 400px;
+    height: auto;
+}
+
+.project img:hover {
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.project-details {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.project-details a {
+    text-decoration: none;
+    color: #000;
+}
+
+.final-project {
+    border-bottom: none !important;
+}
+
+.filter-btn:hover {
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+/* FOOTER STYLES */
+footer {
+    padding-top: 40px;
+    border-top: 1px solid #c3c3c3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+#social-icons ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#social-icons ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+.social-icon:hover {
+    opacity: 0.5;
+    transition: 500ms;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+
+    /* HEADER MOBILE */
+    header h1 {
+        font-size: 18px;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+        margin-top: -10px;
+    }
+
+
+    #menu-close {
+        display: none;
+        font-size: 30px;
+    }
+
+    #menu-open {
+        font-size: 30px;
+    }
+
+
+    /* MAIN */
+    main {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #mobile-nav {
+        position: fixed;
+        top: 20;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        display: none;
+        z-index: 1000;
+    }
+
+    #mobile-nav ul {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #mobile-nav .nav-list-item {
+        font-size: 25px;
+        list-style: none;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    #language-selectors {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .project-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: none;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+    .project {
+        margin-bottom: 50px;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-details {
+        font-size: 13px;
+    }
+
+    /* FOOTER */
+    footer {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+}
