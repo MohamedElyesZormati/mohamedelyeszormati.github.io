@@ -16,8 +16,10 @@ function closeMenu()
     mobileNav.style.display = "none";
     menuOpen.style.display = "block";
     menuClose.style.display = "none";
+    document.body.style.overflow = "visible";
 }
 
 
 menuOpen.addEventListener("click", openMenu);
+
 menuClose.addEventListener("click", closeMenu);
