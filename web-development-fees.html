@@ -1,0 +1,249 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamed Elyes Zormati">
+    <meta name="description" content="My name is Mohamed Elyes Zormati, I am a web developer from Tunis, Tunisia.">
+    <!-- FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/poppins.css">
+    <link rel="stylesheet" href="css/cost-calculator.css">
+    <script src="../js/mobile-menu.js" defer></script>
+    <title>Website Development Fees | Mohamed Elyes Zormati - Web Developer</title>
+</head>
+
+<body>
+
+    <section id="title-section">
+        <h2 class="title">Website Development Fees</h2>
+        <p>Get a personalized estimate for the development of your website</p>
+    </section>
+
+    <!-- MAIN SECTION -->
+    <main>
+
+        <!-- MAIN SECTION 1 -->
+        <section id="main-section-1">
+
+            <h3>Selected Options</h3>
+
+            <ul>
+                <li><i class="fa-solid fa-window-maximize"></i> Website Type: <span class="selected-option"
+                        id="website-type-selected"></span></li>
+
+                <li><i class="fa-solid fa-file"></i> Additional Pages: <span class="selected-option"
+                        id="additional-pages-selected"></span></li>
+
+                <li><i class="fa-solid fa-language"></i> Multilingual Website: <span class="selected-option"
+                        id="mulilingual-selected"></span></li>
+
+                <li><i class="fa-brands fa-searchengin"></i> SEO: <span class="selected-option"
+                        id="seo-selected"></span></li>
+
+                <li><i class="fa-solid fa-box"></i> Number of Products: <span class="selected-option"
+                        id="product-number-selected"></span></li>
+
+                <li><i class="fa-solid fa-globe"></i> Domain Name: <span class="selected-option"
+                        id="domain-name-selected"></span></li>
+
+                <li><i class="fa-solid fa-server"></i> Hosting: <span class="selected-option"
+                        id="web-hosting-selected"></span></li>
+
+                <li><i class="fa-solid fa-screwdriver-wrench"></i> Website Maintenance: <span class="selected-option"
+                        id="web-maintenance-selected"></span></li>
+
+                <li><i class="fa-solid fa-chalkboard-user"></i> Website Training: <span class="selected-option"
+                        id="training-selected"></span></li>
+            </ul>
+
+            <section class="fee-section">
+                <p><b>Total Cost: </b><span id="price"></span> $</p>
+                <button id="reset-btn"><i class="fa-solid fa-trash"></i> Reset</button>
+            </section>
+
+        </section>
+
+        <!-- MAIN SECTION 2 -->
+        <section id="main-section-2">
+            <h3>Select Your Options</h3>
+
+            <form id="calculator-form">
+                <h4>Website Type</h4>
+                <select id="website-type">
+                    <option value="0" selected>Select your website type</option>
+                    <option value="500">Business Website — 5 pages ($500)</option>
+                    <option value="1000">E-commerce Website — 5 pages ($1000)</option>
+                </select>
+
+                <h4>Additional Pages</h4>
+                <select id="additional-pages">
+                    <option value="0" selected>No</option>
+                    <option value="100">1 additional page ($100)</option>
+                    <option value="200">2 additional pages ($200)</option>
+                    <option value="300">3 additional pages ($300)</option>
+                    <option value="400">4 additional pages ($400)</option>
+                    <option value="500">5 additional pages ($500)</option>
+                    <option value="600">6 additional pages ($600)</option>
+                    <option value="700">7 additional pages ($700)</option>
+                    <option value="800">8 additional pages ($800)</option>
+                    <option value="900">9 additional pages ($900)</option>
+                    <option value="1000">10 additional pages ($1000)</option>
+                </select>
+
+                <h4>Multilingual Website</h4>
+                <select id="multilingual-website">
+                    <option value="0" selected>No</option>
+                    <option value="100">1 extra language ($100)</option>
+                    <option value="200">2 extra languages ($200)</option>
+                    <option value="300">3 extra languages ($300)</option>
+                    <option value="400">4 extra languages ($400)</option>
+                    <option value="500">5 extra languages ($500)</option>
+                </select>
+
+                <h4>SEO (Search Engine Optimization)</h4>
+                <select id="seo">
+                    <option value="0" selected>No</option>
+                    <option value="100">Basic SEO ($100)</option>
+                </select>
+
+                <h4>Number of Products</h4>
+                <select id="product-number">
+                    <option value="0" selected>No products</option>
+                    <option value="150">50 products ($150)</option>
+                    <option value="300">100 products ($300)</option>
+                    <option value="450">150 products ($450)</option>
+                    <option value="600">200 products ($600)</option>
+                    <option value="750">250 products ($750)</option>
+                    <option value="900">300 products ($900)</option>
+                    <option value="1050">350 products ($1050)</option>
+                </select>
+
+                <h4>Domain Name</h4>
+                <select id="domain-name">
+                    <option value="0" selected>No</option>
+                    <option value="106">.com domain ($106 / year)</option>
+                    <option value="106">.net domain ($106 / year)</option>
+                    <option value="50">.tn domain ($50 / year)</option>
+                    <option value="50">.com.tn domain ($50 / year)</option>
+                </select>
+
+                <h4>Web Hosting</h4>
+                <select id="web-hosting">
+                    <option value="0" selected>No</option>
+                    <option value="200">Shared hosting ($200 / year)</option>
+                </select>
+
+                <h4>Website Maintenance</h4>
+                <select id="web-maintenance">
+                    <option value="0" selected>No</option>
+                    <option value="300">1 month ($300)</option>
+                    <option value="900">3 months ($900)</option>
+                    <option value="1800">6 months ($1800)</option>
+                    <option value="3600">12 months ($3600)</option>
+                </select>
+
+                <h4>Website Usage Training (Google Meet or On-site)</h4>
+                <select id="training">
+                    <option value="0" selected>No</option>
+                    <option value="60">Content management — 1 hour ($60)</option>
+                    <option value="120">E-commerce management — 2 hours ($120)</option>
+                </select>
+
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function $id(id) {
+            const el = document.getElementById(id);
+            if (!el) console.error("Element not found:", id);
+            return el;
+        }
+
+        (function initCalculator() {
+
+            const fields = [
+                ["website-type", "website-type-selected"],
+                ["product-number", "product-number-selected"],
+                ["additional-pages", "additional-pages-selected"],
+                ["multilingual-website", "mulilingual-selected"],
+                ["seo", "seo-selected"],
+                ["domain-name", "domain-name-selected"],
+                ["web-hosting", "web-hosting-selected"],
+                ["web-maintenance", "web-maintenance-selected"],
+                ["training", "training-selected"],
+            ];
+
+            const selects = [];
+            const spans = [];
+
+            fields.forEach(([selectId, spanId]) => {
+                selects.push($id(selectId));
+                spans.push($id(spanId));
+            });
+
+            const priceDisplay = $id("price");
+            const resetBtn = $id("reset-btn");
+
+            function parseSafe(selectEl) {
+                if (!selectEl) return 0;
+                const val = Number(selectEl.value);
+                return Number.isFinite(val) ? val : 0;
+            }
+
+            function updateSummary(selectEl, spanEl) {
+                if (!selectEl || !spanEl) return;
+                spanEl.textContent = selectEl.options[selectEl.selectedIndex]?.text || "";
+            }
+
+            function formatPrice(num) {
+                return num.toLocaleString("en-US");
+            }
+
+            function calculateTotal() {
+                let total = 0;
+
+                selects.forEach(select => {
+                    total += parseSafe(select);
+                });
+
+                priceDisplay.textContent = formatPrice(total);
+
+                selects.forEach((select, i) => {
+                    updateSummary(select, spans[i]);
+                });
+            }
+
+            function resetCalculator() {
+                selects.forEach(select => {
+                    if (select) select.selectedIndex = 0;
+                });
+
+                calculateTotal();
+            }
+
+            selects.forEach(select => {
+                if (select) select.addEventListener("change", calculateTotal);
+            });
+
+            if (resetBtn) resetBtn.addEventListener("click", resetCalculator);
+
+            calculateTotal();
+
+            window._calc = { calculateTotal, resetCalculator };
+            console.info("Calculator initialized successfully.");
+        })();
+    </script>
+
+</body>
+
+</html>
