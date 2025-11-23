@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamed Elyes Zormati">
+    <meta name="description" content="Je m'appelle Mohamed Elyes Zormati, je suis développeur web de Tunis, Tunisie.">
+    <!-- FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/poppins.css">
+    <link rel="stylesheet" href="../css/cost-calculator.css">
+    <script src="../js/mobile-menu.js" defer></script>
+    <title>Frais de développement de site web | Mohamed Elyes Zormati - Développeur Web</title>
+</head>
+
+<body>
+
+    <section id="title-section">
+        <h2 class="title">Frais de développement de site web</h2>
+        <p>Obtenez une estimation personnalisée du frais de développement de votre site web</p>
+    </section>
+
+
+    <!-- MAIN SECTION -->
+    <main>
+
+        <!-- MAIN SECTION 1 -->
+        <section id="main-section-1">
+
+            <h3>Options sélectionnées</h3>
+
+            <ul>
+                <li><i class="fa-solid fa-window-maximize"></i> Type de site web : <span class="selected-option"
+                        id="website-type-selected"></span></li>
+
+                <li><i class="fa-solid fa-file"></i> Pages Supplémentaires : <span class="selected-option"
+                        id="additional-pages-selected"></span>
+                </li>
+
+                <li><i class="fa-solid fa-language"></i> Site multilingue : <span class="selected-option"
+                        id="mulilingual-selected"></span></li>
+
+                <li><i class="fa-brands fa-searchengin"></i> Référencement Naturel : <span class="selected-option"
+                        id="seo-selected"></span></li>
+
+                <li><i class="fa-solid fa-box"></i> Nombre de produits : <span class="selected-option"
+                        id="product-number-selected"></span></li>
+
+                <li><i class="fa-solid fa-globe"></i> Nom de domaine : <span class="selected-option"
+                        id="domain-name-selected"></span></li>
+
+                <li><i class="fa-solid fa-server"></i> Hébergement : <span class="selected-option"
+                        id="web-hosting-selected"></span></li>
+
+                <li><i class="fa-solid fa-screwdriver-wrench"></i> Maintenance web : <span class="selected-option"
+                        id="web-maintenance-selected"></span></li>
+
+                <li><i class="fa-solid fa-chalkboard-user"></i> Formation a l'utilisation du site : <span
+                        class="selected-option" id="training-selected"></span></li>
+            </ul>
+
+            <section class="fee-section">
+                <p><b>Total des frais : </b><span id="price"></span> DT</p>
+                <button id="reset-btn"><i class="fa-solid fa-trash"></i> Réinitialiser</button>
+            </section>
+
+        </section>
+
+        <!-- MAIN SECTION 2 -->
+        <section id="main-section-2">
+            <h3>Sélectionnez vos options</h3>
+
+            <form id="calculator-form">
+                <h4>Type de site web</h4>
+                <select id="website-type">
+                    <option value="0" selected>Selectionnez votre type de site web</option>
+                    <option value="500">Site vitrine 5 pages (500 DT)</option>
+                    <option value="1000">Site e-commerce 5 pages (1000 DT)</option>
+                </select>
+
+                <h4>Pages additionnelles</h4>
+                <select id="additional-pages">
+                    <option value="0" selected>Non</option>
+                    <option value="100">1 page additionnelle (100DT)</option>
+                    <option value="200">2 pages additionnelles (200DT)</option>
+                    <option value="300">3 pages additionnelles (300DT)</option>
+                    <option value="400">4 pages additionnelles (400 DT)</option>
+                    <option value="500">5 pages additionnelles (500 DT)</option>
+                    <option value="600">6 pages additionnelles (600 DT)</option>
+                    <option value="700">7 pages additionnelles (700 DT)</option>
+                    <option value="800">8 pages additionnelles (800 DT)</option>
+                    <option value="900">9 pages additionnelles (900 DT)</option>
+                    <option value="1000">10 pages additionnelles (1000 DT)</option>
+                </select>
+
+
+                <h4>Site multinlingue</h4>
+                <select id="multilingual-website">
+                    <option value="0" selected>Non</option>
+                    <option value="100">1 langue additionnelle (100 DT)</option>
+                    <option value="200">2 langues additionnelles (200 DT)</option>
+                    <option value="300">3 langues additionnelles (300 DT)</option>
+                    <option value="400">4 langues additionnelles (400 DT)</option>
+                    <option value="500">5 langues additionnelles (500 DT)</option>
+                </select>
+
+                <h4>Référencement Naturel (SEO)</h4>
+                <select id="seo">
+                    <option value="0" selected>Non</option>
+                    <option value="100">Référencement de base (100 DT)</option>
+                </select>
+
+                <h4>Nombre de produits a insérer sur le site</h4>
+                <select id="product-number">
+                    <option value="0" selected>Pas de produits</option>
+                    <option value="150">50 Produits (150 DT)</option>
+                    <option value="300">100 Produits (300 DT)</option>
+                    <option value="450">150 Produits (450 DT)</option>
+                    <option value="600">200 Produits (600 DT)</option>
+                    <option value="750">250 Produits (750 DT)</option>
+                    <option value="900">300 Produits (900 DT)</option>
+                    <option value="1050">350 Produits (1050 DT)</option>
+                </select>
+
+                <h4>Nom de domaine</h4>
+                <select id="domain-name">
+                    <option value="0" selected>Non</option>
+                    <option value="106">Nom de domaine .com (106 DT / an)</option>
+                    <option value="106">Nom de domaine .net (106 DT / an)</option>
+                    <option value="50">Nom de domaine .tn (50 DT / an)</option>
+                    <option value="50">Nom de domaine com.tn (50 DT / an)</option>
+                </select>
+
+                <h4>Hébergement web</h4>
+                <select id="web-hosting">
+                    <option value="0" selected>Non</option>
+                    <option value="200">Hébergement mutualisé (200 DT / an)</option>
+                </select>
+
+                <h4>Maintenance Web</h4>
+                <select id="web-maintenance">
+                    <option value="0" selected>Non</option>
+                    <option value="300">1 Mois (300 DT)</option>
+                    <option value="900">3 Mois (900 DT)</option>
+                    <option value="1800">6 Mois (1800 DT)</option>
+                    <option value="3600">12 Mois (3600 DT)</option>
+                </select>
+
+                <h4>Formation à l'utilisation du site web (en présentiel ou Google Meet)</h4>
+                <select id="training">
+                    <option value="0" selected>Non</option>
+                    <option value="60">Formation de gestion de contenu — 1 Heure (60 DT)</option>
+                    <option value="120">Formation de gestion de boutique en ligne — 2 Heures (120 DT)</option>
+                </select>
+
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function $id(id) {
+            const el = document.getElementById(id);
+            if (!el) console.error("Élément introuvable :", id);
+            return el;
+        }
+
+        (function initCalculator() {
+
+            // IDs des selects + IDs des spans correspondants (résumé)
+            const fields = [
+                ["website-type", "website-type-selected"],
+                ["product-number", "product-number-selected"],
+                ["additional-pages", "additional-pages-selected"],
+                ["multilingual-website", "mulilingual-selected"],
+                ["seo", "seo-selected"],
+                ["domain-name", "domain-name-selected"],
+                ["web-hosting", "web-hosting-selected"],
+                ["web-maintenance", "web-maintenance-selected"],
+                ["training", "training-selected"],
+            ];
+
+            const selects = [];
+            const spans = [];
+
+            fields.forEach(([selectId, spanId]) => {
+                selects.push($id(selectId));
+                spans.push($id(spanId));
+            });
+
+            const priceDisplay = $id("price");
+            const resetBtn = $id("reset-btn");
+
+            function parseSafe(selectEl) {
+                if (!selectEl) return 0;
+                const val = Number(selectEl.value);
+                return Number.isFinite(val) ? val : 0;
+            }
+
+            function updateSummary(selectEl, spanEl) {
+                if (!selectEl || !spanEl) return;
+                spanEl.textContent = selectEl.options[selectEl.selectedIndex]?.text || "";
+            }
+
+            function formatPrice(num) {
+                return num.toLocaleString("fr-FR");
+            }
+
+            function calculateTotal() {
+                let total = 0;
+
+                selects.forEach(select => {
+                    total += parseSafe(select);
+                });
+
+                priceDisplay.textContent = formatPrice(total);
+
+                // Update résumé
+                selects.forEach((select, i) => {
+                    updateSummary(select, spans[i]);
+                });
+            }
+
+            function resetCalculator() {
+                selects.forEach(select => {
+                    if (select) select.selectedIndex = 0;
+                });
+
+                calculateTotal();
+            }
+
+            // Event listeners
+            selects.forEach(select => {
+                if (select) select.addEventListener("change", calculateTotal);
+            });
+
+            if (resetBtn) resetBtn.addEventListener("click", resetCalculator);
+
+            calculateTotal();
+
+            window._calc = { calculateTotal, resetCalculator };
+            console.info("Calculateur initialisé avec succès.");
+        })();
+    </script>
+
+</body>
+
+</html>
